@@ -1,0 +1,145 @@
+@charset "ISO-8859-1";
+
+:root {
+	--e-global-color-astglobalcolor0: #1a6c7a;
+	--e-global-color-astglobalcolor1: #153243;
+	--e-global-color-astglobalcolor2: #000f2b;
+	--e-global-color-astglobalcolor3: #3a3a3a;
+	--e-global-color-astglobalcolor4: #f3f9fb;
+	--e-global-color-astglobalcolor5: #ffffff;
+	--e-global-color-astglobalcolor6: #153243;
+	--e-global-color-astglobalcolor7: #f3f9fb;
+	--e-global-color-astglobalcolor8: #bfd1ff;
+	--e-global-color-astglobalcolor9: #000000;
+	--e-global-color-astglobalcolor10: #212529;
+	--e-global-color-astglobalcolor11: #343a40;
+	--e-global-color-astglobalcolor12: #e85d30;
+	--e-global-color-astglobalcolor13: #272729;
+	--e-global-color-astglobalcolor14: #aaaaaa;
+}
+
+#login {
+	background-image: url(../img/background/login-bg.jpg);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+
+	.opacity {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: var(--e-global-color-astglobalcolor9);
+		opacity: 0.9;
+		z-index: 1;
+	}
+
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100vh;
+		color: var(--e-global-color-astglobalcolor5);
+
+		.form {
+			position: relative;
+			right: -400px;
+			width: 500px;
+			min-height: fit-content;
+			padding: 30px;
+			background: var(--e-global-color-astglobalcolor11);
+			border-radius: 8px;
+			z-index: 2;
+
+			.form-text {
+				height: 20px;
+			}
+
+			.form-control {
+				background-color: #111;
+				border: 0;
+				outline: 0;
+				height: 50px;
+				color: var(--e-global-color-astglobalcolor5);
+			}
+
+			.btn-login {
+				background-color: var(--e-global-color-astglobalcolor13);
+				height: 50px;
+				width: 100%;
+				font-weight: bold;
+			}
+
+			.sign-up {
+				color: var(--e-global-color-astglobalcolor12);
+				text-decoration: none;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1550px) {
+	#login {
+		background-image: url(../img/background/login-bg.jpg);
+		background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100vh;
+
+		.opacity {
+			position: fixed;
+			width: 100%;
+			height: 100vh;
+			background: var(--e-global-color-astglobalcolor9);
+			opacity: 0.9;
+			z-index: 1;
+		}
+
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 100vh;
+			color: var(--e-global-color-astglobalcolor5);
+
+			.form {
+				position: relative;
+				right: 0;
+				width: 400px;
+				min-height: fit-content;
+				padding: 30px;
+				background: var(--e-global-color-astglobalcolor11);
+				border-radius: 8px;
+				z-index: 2;
+
+				.form-control {
+					background-color: #111;
+					border: 0;
+					outline: 0;
+					height: 44px;
+					color: var(--e-global-color-astglobalcolor5);
+				}
+
+				.btn-login {
+					background-color: var(--e-global-color-astglobalcolor13);
+					height: 44px;
+					width: 100%;
+					font-weight: bold;
+				}
+
+				.sign-up {
+					color: var(--e-global-color-astglobalcolor12);
+					text-decoration: none;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
